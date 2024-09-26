@@ -1,0 +1,10 @@
+aimrt:
+  log: # log配置
+    core_lvl: INFO # 内核日志等级，可选项：Trace/Debug/Info/Warn/Error/Fatal/Off，不区分大小写
+    backends: # 日志后端
+      - type: console # 控制台日志
+
+# 模块自定义配置，框架会为每个模块生成临时配置文件，开发者通过Configurator接口获取该配置文件路径
+HelloWorldModule:
+  key1: val1
+  key2: val2
